@@ -1,0 +1,16 @@
+display = "Pu Advanced System"
+display_article = "the Pu Advanced System"
+# official_name = ""
+
+creator = "Sonja Lang"
+publish_year = "~2009"
+
+type = "Additive"
+set = "Positive integers"
+usage = "Widespread (Approx. 50% usage in an informal poll)"
+based_on = "Various unstandardized pre-pu additive systems"
+sona_pona = "Number_systems#pu_number_systems"
+
+[[specification]]
+file = "specification.html"
+source='<i>Toki Pona: The Language of Good</i> (2014) by Sonja Lang, <a href="https://sona.pona.la/wiki/Source:Toki_Pona:_The_Language_of_Good/Numbers">page 46</a>.'

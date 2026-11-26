@@ -1,0 +1,15 @@
+display = "nasin nanpa kijetesantakalu"
+# official_name = ""
+
+creator = "soweli nata"
+publish_year = 2020
+
+type = "Base 6"
+set = "Non-negative integers"
+usage = "None"
+based_on = "Possible influence from several base 6 systems coined in the same conversation"
+sona_pona = "nasin_nanpa_kijetesantakalu"
+
+[[specification]]
+file = "specification.html"
+source='<a href="https://discord.com/channels/301377942062366741/375591429608570881/784275774676271135">message in #sona-musi</a> (ma pona pi toki pona), by soweli nata.'

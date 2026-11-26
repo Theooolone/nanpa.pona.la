@@ -1,0 +1,34 @@
+def to_pu_advanced(n: int) -> str:
+	# Unrepresentable
+	if n % 1 != 0: return None
+	if n < 1: return None
+
+	(ale_count, n) = divmod(n, 100)
+	(mute_count, n) = divmod(n, 20)
+	(luka_count, n) = divmod(n, 5)
+	(tu_count, wan_count) = divmod(n, 2)
+
+	output = ["ale"] * ale_count
+	output += ["mute"] * mute_count
+	output += ["luka"] * luka_count
+	output += ["tu"] * tu_count
+	output += ["wan"] * wan_count
+
+	return " ".join(output)
+
+
+def from_pu_advanced(input: str) -> int:
+	words = input.split()
+	# Input contains invalid words
+	if not set(words) <= {"ale", "ali", "mute", "luka", "tu", "wan"}:
+		return None
+
+	output = 0
+	for word in words:
+		if word == "ale" or word == "ali": output += 100
+		if word == "mute": output += 20
+		if word == "luka": output += 5
+		if word == "tu": output += 2
+		if word == "wan": output += 1
+
+	return output

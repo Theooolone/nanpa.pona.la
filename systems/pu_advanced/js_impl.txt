@@ -1,0 +1,38 @@
+function toPuAdvanced(n) {
+	// Unrepresentable
+	if (n % 1 !== 0) return null;
+	if (n < 1) return null;
+
+	const output = [];
+	output.push(...Array(Math.floor(n / 100)).fill("ale"));
+	n = n % 100;
+	output.push(...Array(Math.floor(n / 20)).fill("mute"));
+	n = n % 20;
+	output.push(...Array(Math.floor(n / 5)).fill("luka"));
+	n = n % 5;
+	output.push(...Array(Math.floor(n / 2)).fill("tu"));
+	n = n % 2;
+	output.push(...Array(n).fill("wan"));
+
+	return output.join(" ");
+}
+
+function fromPuAdvanced(input) {
+	const words = input.split(/\s+/).filter((word) => word !== "");
+	const validWords = new Set(["ale", "ali", "mute", "luka", "tu", "wan"]);
+	// Input contains invalid words
+	if (!words.every((word) => validWords.has(word))) {
+		return null;
+	}
+
+	let output = 0;
+	for (const word of words) {
+		if (word === "ale" || word === "ali") output += 100;
+		if (word === "mute") output += 20;
+		if (word === "luka") output += 5;
+		if (word === "tu") output += 2;
+		if (word === "wan") output += 1;
+	}
+
+	return output;
+}

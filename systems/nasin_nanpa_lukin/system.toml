@@ -1,0 +1,13 @@
+display = "nasin nanpa lukin"
+
+creator = "jan Tamalu"
+published = "9 March 2024"
+
+type = "Base 10"
+set = "Terminating rationals"
+usage = "None"
+based_on = '<a href="/nasin_nanpa_pi">nasin nanpa Pi</a>'
+
+[[specification]]
+file = "specification.html"
+source='<a href="https://tokiponacensus.github.io/o-nanpa-a/"><i>o nanpa a!</i></a>, webpage by jan Tamalu.'
