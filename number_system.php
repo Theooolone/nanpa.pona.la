@@ -67,7 +67,7 @@ $any_impl_included = $py_impl_included or $js_impl_included;
 									<td><?=$system["creator"]?></td>
 								</tr>
 								<tr>
-									<td><b>Publish date</b></td>
+									<td><b>Published</b></td>
 									<td><?=$system["published"]?></td>
 								</tr>
 								<tr>
