@@ -3,7 +3,7 @@ display_article = "the Pu Advanced System"
 # official_name = ""
 
 creator = "Sonja Lang"
-publish_year = "~2009"
+published = "~2009"
 
 type = "Additive"
 set = "Positive integers"
