@@ -37,6 +37,12 @@ $any_impl_included = $py_impl_included or $js_impl_included;
 	<meta charset="utf-8">
 	<title><?=$system["display"]?></title>
 	<link rel="stylesheet" href="/style.css">
+	<style>
+		html, body {
+			margin: 0;
+			height: 100%;
+		}
+	</style>
 	<script src="/number_system.js"></script>
 	<script src="/systems/<?=$id?>/impl.js"></script>
 	<?php if($any_impl_included): ?><link rel="stylesheet" href="https://gen-w-deja.github.io/prism-themes/themes/prism-atom-dark.css"><?php endif; ?>
