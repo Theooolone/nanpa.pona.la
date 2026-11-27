@@ -27,6 +27,6 @@ systems["nasin_nanpa_kijetesantakalu"] = {
 			if (word == "kiJEtesantakalu") words[i] = "5";
 		});
 
-		return {"result": "success", "output": words.join("")};
+		return {"result": "success", "output": numstring_to_bigint(words.join(""), 6)};
 	}
 }
